@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title">Encuesta Rápida</h1>
+    <p id="description">Necesitamos comunicanos con usted en el futuro. La confidencialidad de sus datos se cumple en el marco de la <a href="https://www.bcn.cl/leychile/navegar?idNorma=141599&idParte=8642691&idVersion=">Ley Nº19.628</a>.</p>
+    <form action="mailto:allanmoralesprado@proton.me" method="post">
+        <fieldset>
+            <h2>Datos Personales</h2>
+
+            <label for="first-name">Primer Nombre <input type="text" name="first-name" id="first-name" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" placeholder="John" title="Por favor, ingrese sólo letras" minlength="2" required></label>
+
+            <label for="second-name">Segundo Nombre <input type="text" name="second-name" id="second-name" placeholder="Robert" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Por favor, ingrese sólo letras" minlength="2" required></label>
+
+            <label for="first-lastname">Apellido Paterno <input type="text" name="first-lastname" id="first-lastname" placeholder="Doe" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Por favor, ingrese sólo letras" minlength="2" required></label>
+
+            <label for="second-lastname">Apellido Materno <input type="text" name="second-lastname" id="second-lastname" placeholder="Kennedy" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Por favor, ingrese sólo letras" minlength="2" required></label>
+
+            <label for="email">Correo Electrónico <input type="email" name="email" id="email" placeholder="john.kennedy@mail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"  title="Ejemplo: cuenta@correo.cl" required></label>
+
+            <label for="phone">Número de Teléfono (opcional)<input type="tel" name="phone" placeholder="978664234" id="phone" pattern="[0-9]{9}" title="Nueve dígitos"></label>
+        </fieldset>
+        <fieldset>
+            <!--
+                Debe haber una sección en la página donde los participantes puedan calificar diferentes aspectos del servicio, como la calidad, la atención al cliente y la puntualidad.
+
+                Cada categoría de calificación debe tener una escala de 1 a 5, donde 1 representa "muy insatisfactorio" y 5 representa "muy satisfactorio".
+            -->
+            <h2>Calificación del Servicio</h2>
+            <table>
+                <tr>
+                    <th>Indicador</th>
+                    <th>Muy insatisfactorio</th>
+                    <th>Insatisfactorio</th>
+                    <th>Sin comentarios</th>
+                    <th>Satisfactorio</th>
+                    <th>Muy satisfactorio</th>
+                </tr>
+                <tr>
+                    <td>El ejecutivo de su última consulta utilizó un tono de voz y vocabulario adecuados</td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion1" value="1"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion2" value="2"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion3" value="3"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion4" value="4"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion5" value="5"></td>
+                </tr>
+                <tr>
+                    <td>El ejecutivo de su última consulta comprendió su problema</td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion1" value="1"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion2" value="2"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion3" value="3"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion4" value="4"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion5" value="5"></td>
+                </tr>
+                <tr>
+                    <td>El ejecutivo de su última consulta resolvió su problema y/u ofreció alternativas de solución</td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion1" value="1"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion2" value="2"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion3" value="3"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion4" value="4"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion5" value="5"></td>
+                </tr>
+            </table>
+            <label for="justify">Justifique la calificación entregada al servicio en general (opcional) <textarea rows="3" cols="30" placeholder="Comente aquí algún detalle o dato en particular sobre su experiencia con el servicio..." name="justify" id="justify"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <h2>El Cliente Tiene la Razón</h2>
+            <p>Lo invitamos a que entregue su opinión sobre nuestro servicio</p>
+
+            <label for="pregunta1">Según sus experiencia con nosotros ¿Qué piensa usted sobre los asistentes virtuales automáticos disponibles en nuestro servicio? <textarea rows="3" cols="30" placeholder="Su respuesta es muy importante para nosotros. Comente aquí." name="pregunta1" id="pregunta1"></textarea></label>
+
+            <label for="pregunta2">Describa o indique algún servicio no disponible en nuestra cobertura que sea de su interés. <textarea rows="3" cols="30" placeholder="Su respuesta es muy importante para nosotros. Comente aquí." name="pregunta2" id="pregunta2"></textarea></label>
+
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
