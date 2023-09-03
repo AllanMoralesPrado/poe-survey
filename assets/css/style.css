@@ -1,0 +1,79 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title, #description{
+    min-width: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    min-width: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+label{
+    display:block;
+    margin: 0.5rem 0;
+}
+
+fieldset{
+    border: none;
+    margin: 0 auto;
+}
+
+fieldset:first-of-type > label
+{
+    width: 50%;
+    margin: 0.4rem auto;
+}
+
+fieldset:first-of-type > input{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#personal-data{
+    text-align: center;
+}
+
+textarea
+{
+    width:100%;
+}
+
+td>input[type="radio"]{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 300px;
+    height: 2em;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea
+{
+    font-size: 1rem;
+}
