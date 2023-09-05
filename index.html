@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-optimized.css">
+    <link rel="shortcut icon" href="assets/favicon/document.png" type="image/png">
 </head>
 <body>
     <h1 id="title">Encuesta Rápida</h1>
@@ -36,35 +37,35 @@
             <table>
                 <tr>
                     <th>Indicador</th>
-                    <th>Muy insatisfactorio</th>
-                    <th>Insatisfactorio</th>
-                    <th>Sin comentarios</th>
-                    <th>Satisfactorio</th>
-                    <th>Muy satisfactorio</th>
+                    <th id="muy-insatisfactorio">Muy insatisfactorio</th>
+                    <th id="insatisfactorio">Insatisfactorio</th>
+                    <th id="sin-comentarios">Sin comentarios</th>
+                    <th id="satisfactorio">Satisfactorio</th>
+                    <th id="muy-satisfactorio">Muy satisfactorio</th>
                 </tr>
                 <tr>
                     <td>El ejecutivo de su última consulta utilizó un tono de voz y vocabulario adecuados</td>
-                    <td><input type="radio" name="indicador1" id="indicador1-opcion1" value="1"></td>
-                    <td><input type="radio" name="indicador1" id="indicador1-opcion2" value="2"></td>
-                    <td><input type="radio" name="indicador1" id="indicador1-opcion3" value="3"></td>
-                    <td><input type="radio" name="indicador1" id="indicador1-opcion4" value="4"></td>
-                    <td><input type="radio" name="indicador1" id="indicador1-opcion5" value="5"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion1" value="1" aria-labelledby="muy-insatisfactorio"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion2" value="2" aria-labelledby="insatisfactorio"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion3" value="3" aria-labelledby="sin-comentarios"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion4" value="4" aria-labelledby="satisfactorio"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion5" value="5" aria-labelledby="muy-satisfactorio"></td>
                 </tr>
                 <tr>
                     <td>El ejecutivo de su última consulta comprendió su problema</td>
-                    <td><input type="radio" name="indicador2" id="indicador2-opcion1" value="1"></td>
-                    <td><input type="radio" name="indicador2" id="indicador2-opcion2" value="2"></td>
-                    <td><input type="radio" name="indicador2" id="indicador2-opcion3" value="3"></td>
-                    <td><input type="radio" name="indicador2" id="indicador2-opcion4" value="4"></td>
-                    <td><input type="radio" name="indicador2" id="indicador2-opcion5" value="5"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion1" value="1" aria-labelledby="muy-insatisfactorio"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion2" value="2" aria-labelledby="insatisfactorio"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion3" value="3" aria-labelledby="sin-comentarios"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion4" value="4" aria-labelledby="satisfactorio"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion5" value="5" aria-labelledby="muy-satisfactorio"></td>
                 </tr>
                 <tr>
                     <td>El ejecutivo de su última consulta resolvió su problema y/u ofreció alternativas de solución</td>
-                    <td><input type="radio" name="indicador3" id="indicador3-opcion1" value="1"></td>
-                    <td><input type="radio" name="indicador3" id="indicador3-opcion2" value="2"></td>
-                    <td><input type="radio" name="indicador3" id="indicador3-opcion3" value="3"></td>
-                    <td><input type="radio" name="indicador3" id="indicador3-opcion4" value="4"></td>
-                    <td><input type="radio" name="indicador3" id="indicador3-opcion5" value="5"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion1" value="1" aria-labelledby="muy-insatisfactorio"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion2" value="2" aria-labelledby="insatisfactorio"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion3" value="3" aria-labelledby="sin-comentarios"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion4" value="4" aria-labelledby="satisfactorio"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion5" value="5" aria-labelledby="muy-satisfactorio"></td>
                 </tr>
             </table>
             <label for="justify">Justifique la calificación entregada al servicio en general (opcional)</label>
