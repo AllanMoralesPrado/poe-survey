@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="assets/css/style-optimized.css">
+    <link rel="shortcut icon" href="assets/favicon/document.png" type="image/png">
+</head>
+<body>
+    <h1 id="title">Encuesta Rápida</h1>
+    <p id="description">Necesitamos comunicanos con usted en el futuro. La confidencialidad de sus datos se cumple en el marco de la <a href="https://www.bcn.cl/leychile/navegar?idNorma=141599&idParte=8642691&idVersion=">Ley Nº19.628</a>.</p>
+    <form>
+        <fieldset>
+            <h2 id="personal-data">Datos Personales</h2>
+
+            <label for="first-name">Primer Nombre</label>
+            <input type="text" name="first-name" id="first-name" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" placeholder="John" title="Por favor, ingrese sólo letras" minlength="2" autocomplete="name" required>
+
+            <label for="second-name">Segundo Nombre</label>
+            <input type="text" name="second-name" id="second-name" placeholder="Robert" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Por favor, ingrese sólo letras" minlength="2" autocomplete="name" required>
+
+            <label for="first-lastname">Apellido Paterno</label>
+            <input type="text" name="first-lastname" id="first-lastname" placeholder="Doe" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Por favor, ingrese sólo letras" minlength="2"  autocomplete="name" required>
+
+            <label for="second-lastname">Apellido Materno</label>
+            <input type="text" name="second-lastname" id="second-lastname" placeholder="Kennedy" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" title="Por favor, ingrese sólo letras" minlength="2" autocomplete="name" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" id="email" placeholder="john.kennedy@mail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"  title="Ejemplo: cuenta@correo.cl" autocomplete="email" required>
+
+            <label for="phone">Número de Teléfono (opcional)</label>
+            <input type="tel" name="phone" placeholder="978664234" id="phone" pattern="[0-9]{9}" title="Nueve dígitos" autocomplete="tel">
+        </fieldset>
+        <fieldset>
+            <h2>Calificación del Servicio</h2>
+            <table>
+                <tr>
+                    <th>Indicador</th>
+                    <th id="muy-insatisfactorio">Muy insatisfactorio</th>
+                    <th id="insatisfactorio">Insatisfactorio</th>
+                    <th id="sin-comentarios">Sin comentarios</th>
+                    <th id="satisfactorio">Satisfactorio</th>
+                    <th id="muy-satisfactorio">Muy satisfactorio</th>
+                </tr>
+                <tr>
+                    <td>El ejecutivo de su última consulta utilizó un tono de voz y vocabulario adecuados</td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion1" value="1" aria-labelledby="muy-insatisfactorio"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion2" value="2" aria-labelledby="insatisfactorio"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion3" value="3" aria-labelledby="sin-comentarios"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion4" value="4" aria-labelledby="satisfactorio"></td>
+                    <td><input type="radio" name="indicador1" id="indicador1-opcion5" value="5" aria-labelledby="muy-satisfactorio"></td>
+                </tr>
+                <tr>
+                    <td>El ejecutivo de su última consulta comprendió su problema</td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion1" value="1" aria-labelledby="muy-insatisfactorio"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion2" value="2" aria-labelledby="insatisfactorio"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion3" value="3" aria-labelledby="sin-comentarios"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion4" value="4" aria-labelledby="satisfactorio"></td>
+                    <td><input type="radio" name="indicador2" id="indicador2-opcion5" value="5" aria-labelledby="muy-satisfactorio"></td>
+                </tr>
+                <tr>
+                    <td>El ejecutivo de su última consulta resolvió su problema y/u ofreció alternativas de solución</td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion1" value="1" aria-labelledby="muy-insatisfactorio"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion2" value="2" aria-labelledby="insatisfactorio"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion3" value="3" aria-labelledby="sin-comentarios"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion4" value="4" aria-labelledby="satisfactorio"></td>
+                    <td><input type="radio" name="indicador3" id="indicador3-opcion5" value="5" aria-labelledby="muy-satisfactorio"></td>
+                </tr>
+            </table>
+            <label for="justify">Justifique la calificación entregada al servicio en general (opcional)</label>
+            <textarea rows="3" cols="30" placeholder="Comente aquí algún detalle o dato en particular sobre su experiencia con el servicio..." name="justify" id="justify"></textarea>
+        </fieldset>
+        <fieldset>
+            <h2>El Cliente Tiene la Razón</h2>
+            <p>Lo invitamos a que entregue su opinión sobre nuestro servicio</p>
+
+            <label for="pregunta1">Según sus experiencia con nosotros ¿Qué piensa usted sobre los asistentes virtuales automáticos disponibles en nuestro servicio?</label>
+            <textarea rows="3" cols="30" placeholder="Su respuesta es muy importante para nosotros. Comente aquí." name="pregunta1" id="pregunta1"></textarea>
+
+            <label for="pregunta2">Describa o indique algún servicio no disponible en nuestra cobertura que sea de su interés.</label>
+            <textarea rows="3" cols="30" placeholder="Su respuesta es muy importante para nosotros. Comente aquí." name="pregunta2" id="pregunta2"></textarea>
+        </fieldset>
+        <input type="submit" value="Enviar" disabled>
+    </form>
+</body>
+</html>
